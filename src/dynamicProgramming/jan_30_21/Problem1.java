@@ -6,6 +6,7 @@ package dynamicProgramming.jan_30_21;
     * T(0)=T(1)=2
     * T(n) = ∑ 2*T(i)*T(i-1) , for n>1 , i>=1 , i<n
     *
+    * Problem 1,2,3
  */
 
 //T(2) = 2*T(0)*T(1)
