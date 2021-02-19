@@ -24,9 +24,9 @@ public class ArrayListLearning {
         }
         System.out.println();
 
-        // Since the list is created by callinng "aslist", it becomes non-resizable as it backed by the underlying array.
+        // Since the list is created by calling "aslist", it becomes non-resizable as it backed by the underlying array.
         list.remove(1);
-        list.add("qweerty");
+        list.add("qwerty");
 
         System.out.println(Arrays.toString(list.toArray()));
         for(int i=0; i<arr.length; i++){
