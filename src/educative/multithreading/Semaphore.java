@@ -27,6 +27,7 @@ class CorrectSemaphoreExample {
                         semaphore.acquire();
                         try {
 //                            throw new RuntimeException("");
+
                             System.out.println("Bad Thread");
                         } catch (Exception e) {
                             // handle any program logic exception and exit the function
