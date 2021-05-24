@@ -2,6 +2,7 @@ package educative.String;
 
 public class Challenge1 {
 
+    //Reverse the order of words in a given sentence
     public static void reverseArray(char[] sentence, int start, int end){
         int count=0;
         for(int i=start; i<=(start+end)/2; i++){
