@@ -33,6 +33,8 @@ public class Challenge1 {
 //            i=space+1;
 //        }
 //    }
+
+    //O(n)
     public static void reverseWords (char[] sentence) {
         reverseArray(sentence,0,sentence.length-1);
         int i=0;
