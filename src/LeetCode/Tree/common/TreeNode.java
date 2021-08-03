@@ -15,30 +15,28 @@ public class TreeNode {
         this.right = right;
     }
 
-    public TreeNode insert( TreeNode root, int data){
+    public static TreeNode insert( TreeNode root, Integer[] arr){
+        int count=0;
         if(root==null) {
-            root = new  TreeNode(data);
-            return root;
+            root = new TreeNode(arr[count++]);
         }
         List<TreeNode> q = new ArrayList<>();
         q.add(root);
-        while(!q.isEmpty()) {
+        while(count<arr.length) {
             TreeNode n = q.remove(0);
             if (n != null) {
                 if(n.left==null){
-                    n.left = new TreeNode(data);
-                    break;
+                    if(arr[count]!=null)
+                        n.left = new TreeNode(arr[count++]);
+                    else count++;
                 }
-                else{
-                    q.add(n.left);
+                q.add(n.left);
+                if(n.right==null && count<arr.length){
+                    if(arr[count]!=null)
+                        n.right = new TreeNode(arr[count++]);
+                    else count++;
                 }
-                if(n.right==null){
-                    n.right = new TreeNode(data);
-                    break;
-                }
-                else{
-                    q.add(n.right);
-                }
+                q.add(n.right);
             }
         }
         return root;
@@ -67,12 +65,10 @@ public class TreeNode {
         }
     }
 
-    public static  TreeNode createSampleTree(int[] arr){
+    public static  TreeNode createSampleTree(Integer[] arr){
         if(arr.length<1) return null;
-         TreeNode root = new  TreeNode(arr[0]);
-        for(int i=1; i<arr.length; i++){
-            root.insert(root, arr[i]);
-        }
+        TreeNode root = null;
+        root = insert(root, arr);
         return root;
     }
 }

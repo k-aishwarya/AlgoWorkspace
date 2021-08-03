@@ -19,7 +19,7 @@ public class sumRootToLeaf {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1,0,1,0,1,0,1};
+        Integer arr[] = {1,0,1,0,1,0,1};
         TreeNode root =  TreeNode.createSampleTree(arr);
         TreeNode.levelOrder(root);
         System.out.println();
