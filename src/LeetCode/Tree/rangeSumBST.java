@@ -1,7 +1,7 @@
 package LeetCode.Tree;
 
 public class rangeSumBST {
-    public static int rangeSumBST(TreeNode root, int low, int high) {
+    public static int rangeSumBST(TreeNodeBST root, int low, int high) {
         if(root==null) {
             return 0;
         }
@@ -13,8 +13,8 @@ public class rangeSumBST {
 
     public static void main(String[] args) {
         int arr[] = {10,5,15,3,7,18};
-        TreeNode root = TreeNode.createSampleTree(arr);
-        TreeNode.levelOrder(root);
+        TreeNodeBST root = TreeNodeBST.createSampleTree(arr);
+        TreeNodeBST.levelOrder(root);
         System.out.println();
         System.out.println(rangeSumBST(root, 7, 15));
 
