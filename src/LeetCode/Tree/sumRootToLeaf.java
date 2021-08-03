@@ -1,8 +1,10 @@
 package LeetCode.Tree;
 
+import LeetCode.Tree.common.TreeNode;
+
 public class sumRootToLeaf {
 
-    public static int sumRootToLeaf( TreeNode root, int parent, int sum) {
+    public static int sumRootToLeaf(TreeNode root, int parent, int sum) {
         if(root==null) return sum;
         int left = sumRootToLeaf(root.left, parent * 2 + root.val, sum);
         int right = sumRootToLeaf(root.right, parent * 2 + root.val, sum);

@@ -1,12 +1,13 @@
-package LeetCode.Tree;
+package LeetCode.Tree.common;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TreeNodeBST {
-   int val;
-   TreeNodeBST left;
-   TreeNodeBST right;
+
+   public int val;
+   public TreeNodeBST left;
+   public TreeNodeBST right;
    TreeNodeBST() {}
    TreeNodeBST(int val) { this.val = val; }
    TreeNodeBST(int val, TreeNodeBST left, TreeNodeBST right) {

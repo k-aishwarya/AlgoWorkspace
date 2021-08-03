@@ -1,5 +1,7 @@
 package LeetCode.Tree;
 
+import LeetCode.Tree.common.TreeNodeBST;
+
 public class rangeSumBST {
     public static int rangeSumBST(TreeNodeBST root, int low, int high) {
         if(root==null) {
