@@ -1,7 +1,6 @@
 package LeetCode.Tree;
 
-import java.util.ArrayList;
-import java.util.List;
+// Link - https://stackoverflow.com/questions/24755059/leetcode-unique-binary-search-trees-calculation
 
 public class numTrees {
     public static int numTrees(int n) {
