@@ -57,11 +57,16 @@ public class TreeNode {
             if (n != null) {
                  TreeNode left = n.left;
                  TreeNode right = n.right;
-                if(left!=null || right!=null){
-                    q.add(left);
-                    q.add(right);
+                 q.add(left);
+                 q.add(right);
+            }
+            boolean elements_left = false;
+            for(TreeNode i:q){
+                if(i!=null){
+                    elements_left=true;
                 }
             }
+            if(!elements_left) return;
         }
     }
 
