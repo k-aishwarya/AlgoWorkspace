@@ -1,6 +1,6 @@
 package LeetCode.Tree.common;
 
-class Node {
+public class Node {
     public int val;
     public Node left;
     public Node right;
