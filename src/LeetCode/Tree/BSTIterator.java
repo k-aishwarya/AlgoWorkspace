@@ -7,13 +7,11 @@ import java.util.List;
 
 public class BSTIterator {
 
-    private TreeNode root;
     private int pointer=-1;
     private List<TreeNode> inOrder;
     private int count=0;
 
     public BSTIterator(TreeNode root) {
-        this.root = root;
         if(root!=null) {
             inOrder= new ArrayList<>();
             inOrder(root);
