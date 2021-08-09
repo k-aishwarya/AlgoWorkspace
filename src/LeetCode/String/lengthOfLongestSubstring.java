@@ -37,6 +37,8 @@ public class lengthOfLongestSubstring {
     }
 
     //From Solutions
+    // Make a window using left and right
+    // Use visited matrix to track the redundant chars
     public static int lengthOfLongestSubstring_(String str) {
         int[] visited = new int[128];
         int left = 0;
