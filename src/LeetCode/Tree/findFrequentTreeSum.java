@@ -7,23 +7,17 @@ import java.util.*;
 public class findFrequentTreeSum {
 
     static Map<Integer,Integer> m = new HashMap<>();
+    static int maxFrequency=0;
     {
         m = new HashMap<>();
+        maxFrequency=0;
     }
 
     public static int[] findFrequentTreeSum(TreeNode root) {
         findFrequentTreeSumHelper(root);
-
-        int max=0;
-        for(Integer key: m.keySet()){
-            if(max<m.get(key)){
-                max=m.get(key);
-            }
-        }
-
         List<Integer> arr = new ArrayList<>();
         for(Integer key: m.keySet()){
-            if(max==m.get(key)){
+            if(maxFrequency==m.get(key)){
                 arr.add(key);
             }
         }
@@ -41,6 +35,7 @@ public class findFrequentTreeSum {
         sum+=left+right;
 
         m.compute(sum, (k, v) -> (v == null) ? 1 : v+1);
+        maxFrequency = Math.max(maxFrequency,m.get(sum));
 
         return sum;
     }
