@@ -1,9 +1,8 @@
-package LeetCode.Array.Contest59;
-
-import java.util.Arrays;
-import java.util.Comparator;
+package LeetCode.Contest59;
 
 public class countPaths {
+
+    //Not done!
 
     long min_time = Long.MAX_VALUE;
     int total_path = 0;

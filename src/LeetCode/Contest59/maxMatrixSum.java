@@ -1,4 +1,4 @@
-package LeetCode.Array.Contest59;
+package LeetCode.Contest59;
 
 public class maxMatrixSum {
     public static long maxMatrixSum(int[][] matrix) {

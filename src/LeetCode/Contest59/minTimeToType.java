@@ -1,4 +1,4 @@
-package LeetCode.Array.Contest59;
+package LeetCode.Contest59;
 
 public class minTimeToType {
     public static int minTimeToType(String word) {
