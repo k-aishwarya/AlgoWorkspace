@@ -4,6 +4,7 @@ public class longestPalindrome {
 
     int start=0; int maxLen=0;
 
+    // O(n2)
     public String longestPalindrome(String s) {
         if(s==null || s.isEmpty()) return null;
         for(int i=0; i<s.length(); i++){
@@ -26,6 +27,6 @@ public class longestPalindrome {
 
     public static void main(String[] args) {
         longestPalindrome l = new longestPalindrome();
-        System.out.println(l.longestPalindrome("babad"));
+        System.out.println(l.longestPalindrome("abcdbcda"));
     }
 }
